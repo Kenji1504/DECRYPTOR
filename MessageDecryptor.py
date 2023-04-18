@@ -6,7 +6,10 @@
 import time
 time.sleep(2)
 print(("\033[1m" + "Hi there! This is a program that can decipher the encrypted message behind the user's input.".center(100)))
-#ask for user's input
+#ask for user's input:
+time.sleep(2)
+user_input = input("\nInput the encrypted message: ")
+user_output = ""
 #check each character from the user's input
 #if there's "*", change to "a"
 #if there's "&", change to "e"
