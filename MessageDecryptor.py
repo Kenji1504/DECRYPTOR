@@ -15,7 +15,9 @@ for i in range(len(user_input)):
     #if there's "*", change to "a"
     if user_input[i] == "*":
         user_output += "a"
-#if there's "&", change to "e"
+    #if there's "&", change to "e"
+    elif user_input[i] == "&":
+        user_output += "e"  
 #if there's "#", change to "i"
 #if there's "+", change to "o"
 #if there's "!", change to "u"
