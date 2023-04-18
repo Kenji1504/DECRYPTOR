@@ -25,6 +25,8 @@ for i in range(len(user_input)):
     elif user_input[i] == "+":
         user_output += "o"
     #if there's "!", change to "u"
+    elif user_input[i] == "!":
+        user_output += "u"   
     #transfer remaining characters on the output:
     else:
         user_output += user_input[i]
