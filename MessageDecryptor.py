@@ -10,11 +10,18 @@ print(("\033[1m" + "Hi there! This is a program that can decipher the encrypted 
 time.sleep(2)
 user_input = input("\nInput the encrypted message: ")
 user_output = ""
-#check each character from the user's input
-#if there's "*", change to "a"
+#check each character from the user's input:
+for i in range(len(user_input)):
+    #if there's "*", change to "a"
+    if user_input[i] == "*":
+        user_output += "a"
 #if there's "&", change to "e"
 #if there's "#", change to "i"
 #if there's "+", change to "o"
 #if there's "!", change to "u"
+    #transfer remaining characters on the output:
+    else:
+        user_output += user_input[i]
 #Print the decrypted message
+print(user_output)
 #Print an ender for the program
