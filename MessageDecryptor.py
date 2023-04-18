@@ -2,7 +2,10 @@
 #BSCPE 1-5
 #This is a program that decrypts some specified characters from the user's input.
 
-#Print an introduction
+#Print an introduction:
+import time
+time.sleep(2)
+print(("\033[1m" + "Hi there! This is a program that can decipher the encrypted message behind the user's input.".center(100)))
 #ask for user's input
 #check each character from the user's input
 #if there's "*", change to "a"
