@@ -10,6 +10,7 @@ print(("\033[1m" + "Hi there! This is a program that can decipher the encrypted 
 time.sleep(2)
 user_input = input("\nInput the encrypted message: ")
 user_output = ""
+
 #check each character from the user's input:
 for i in range(len(user_input)):
     #if there's "*", change to "a":
@@ -30,6 +31,7 @@ for i in range(len(user_input)):
     #transfer remaining characters on the output:
     else:
         user_output += user_input[i]
+
 #Print the decrypted message:
 import pyfiglet
 import time
@@ -40,4 +42,8 @@ MESSAGE_PROMPT = "Decrypted Message: \n"
 print("\n\033[1m" + "\033[35m"+ MESSAGE_PROMPT)
 time.sleep(1)
 print("\033[35m" + "\033[1m" + pyfiglet.figlet_format(user_output, font = "larry3d"))
+
 #Print an ender for the program
+PROGRAM_ENDER = "END"
+time.sleep(3)
+print ("\n" + "\033[1m" + PROGRAM_ENDER.center(90, "="))
