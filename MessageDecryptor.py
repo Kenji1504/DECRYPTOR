@@ -18,9 +18,11 @@ for i in range(len(user_input)):
     #if there's "&", change to "e"
     elif user_input[i] == "&":
         user_output += "e"  
-#if there's "#", change to "i"
-#if there's "+", change to "o"
-#if there's "!", change to "u"
+    #if there's "#", change to "i"
+    elif user_input[i] == "#":
+        user_output += "i"
+    #if there's "+", change to "o"
+    #if there's "!", change to "u"
     #transfer remaining characters on the output:
     else:
         user_output += user_input[i]
